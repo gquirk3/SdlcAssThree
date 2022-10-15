@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+      <HBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" text="This text analyzer will determine the most frequently used words in the poem &quot;The Raven&quot; by Edgar Allen Poe" textAlignment="CENTER" textFill="#1c6be1" wrapText="true" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox onInputMethodTextChanged="#buttonClicked" prefHeight="275.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelOutput" onInputMethodTextChanged="#buttonClicked" onMouseClicked="#buttonClicked" text="1. the 57 2. and 38 3. i 32 4. my 24 5. of 22 6. that 18 7. this 16 8. a 15 9. door 14 10. is 11 11. raven 11 12. nevermore 11 13. chamber 11 14. bird 10 15. on 10 16. me 9 17. at 8 18. by 8 19. with 8 20. or 8 " wrapText="true" />
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Calculate" alignment="CENTER" mnemonicParsing="false" onAction="#buttonClicked" onMouseClicked="#buttonClicked" text="Calculate Word Count" textAlignment="CENTER" textFill="#22b94d" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
